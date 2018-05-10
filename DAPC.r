@@ -1,4 +1,4 @@
-# R
+# R SCRIPT FOR RUNNING DAPC
 
 library("adegenet")
 ds<-read.table("Desktop/stru/Structure_syn_all_data_biallelic_flip.stru",header = TRUE, sep = "",row.names = 1)
