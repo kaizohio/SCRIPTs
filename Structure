@@ -1,0 +1,17 @@
+For running structure, I created the folder : kai/Structure/Structure/
+You have to copy there your input file: Structure_syn_all_data_biallelic_flip.str
+In the same folder i put the following files: input.py extraparams structure and strauto-0.3.1_minpop.py 
+You have to modify input.py for your data:
+#1. Max population à 10
+ #6. Number of individuals à Number of isolates that you have.
+ #7. Number of loci à wc Structure_syn_all_data_biallelic.txt -1
+#8. Ploidy: 1
+#2. Burnin: number of simulations to burn (not take into account while waiting the simulation to converge). Generally 100.000
+#3 mcmc: number of simulations. Generally: 100.000
+
+Then type  >python strauto-0.3.1_minpop.py (while being in the folder) and it will generate the following files:
+input.pc
+run structure
+mainparams
+
+Then you are ready to run structure. I already created all the needed scripts and folders for you to submit it (3 repetitions form k1 to k10). So you just have to submit all the bash scripts that i put there (k1_1.sh…).
