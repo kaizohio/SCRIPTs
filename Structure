@@ -15,3 +15,8 @@ run structure
 mainparams
 
 Then you are ready to run structure. I already created all the needed scripts and folders for you to submit it (3 repetitions form k1 to k10). So you just have to submit all the bash scripts that i put there (k1_1.sh…).
+
+#k1_1.sh
+sbatch --mem 5000 source Structure-2.3.4_urand ; ./structure -K 1 -m mainparams -e extraparams -o k1/Structure_syn_all_data_biallelic_flip_k1_run1 2>&1 | tee log/k1/Structure_syn_all_data_biallelic_flip_k1_run1.log
+#k2_1.sh
+sbatch --mem 5000 source Structure-2.3.4_urand ; ./structure -K 2 -m mainparams -e extraparams -o k2/Structure_syn_all_data_biallelic_flip_k2_run2 2>&1 | tee log/k2/Structure_syn_all_data_biallelic_flip_k2_run2.log
